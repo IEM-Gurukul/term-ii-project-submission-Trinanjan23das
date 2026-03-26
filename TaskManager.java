@@ -10,4 +10,8 @@ public class TaskManager {
     public ArrayList<Task> getTasks() {
         return tasks;
     }
+    public void deleteTask(int index) {
+    if (index >= 0 && index < tasks.size()) {
+        tasks.remove(index);
+    }
 }
