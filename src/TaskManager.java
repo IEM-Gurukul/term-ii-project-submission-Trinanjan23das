@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
-public class TaskManager {
+public interface TaskOperations {
+    void addTask(Task task);
+}
+
+public class TaskManager implements TaskOperations {
     private ArrayList<Task> tasks = new ArrayList<>();
 
     public void addTask(Task task) {
