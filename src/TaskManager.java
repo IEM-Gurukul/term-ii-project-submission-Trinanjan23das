@@ -11,8 +11,10 @@ public class TaskManager {
         return tasks;
     }
     public void deleteTask(int index) {
-    if (index >= 0 && index < tasks.size()) {
+    try {
         tasks.remove(index);
+    } catch (Exception e) {
+        System.out.println("Invalid index!");
     }
         public void updateTask(int index, String title, String desc) {
     if (index >= 0 && index < tasks.size()) {
