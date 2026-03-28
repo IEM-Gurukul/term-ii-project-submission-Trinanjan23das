@@ -8,5 +8,7 @@ public class Main {
         for (Task t : manager.getTasks()) {
             System.out.println(t.getTitle() + " - " + t.getDescription());
         }
+        AdvancedTaskManager manager = new AdvancedTaskManager();
+manager.showTaskCount();
     }
 }
