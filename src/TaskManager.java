@@ -25,4 +25,9 @@ public class TaskManager implements TaskOperations {
         tasks.set(index, new Task(title, desc));
     }
 }
+        public class AdvancedTaskManager extends TaskManager {
+    public void showTaskCount() {
+        System.out.println("Total tasks: " + getTasks().size());
+    }
+}
 
